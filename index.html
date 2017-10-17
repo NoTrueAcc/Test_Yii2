@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Заработок на создании сайтов под заказ</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Фреймворк Yii 2.0 с нуля. Пример создания сайта." />
+	<meta name="keywords" content="фреймворк yii 2 с нуля, пример создания сайта, михаил русаков" />
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="menu">
+		<div>
+			<div class="item">
+				<a rel="external" href="http://srs.myrusakov.ru/list">Другие курсы</a>
+			</div>
+			<div class="item">
+				<a rel="external" href="http://myrusakov.ru">Мой сайт</a>
+			</div>
+			<div class="item">
+				<a rel="external" href="http://blog.myrusakov.ru">Мой блог</a>
+			</div>
+			<div class="item">
+				<a rel="external" href="http://support.myrusakov.ru">Служба поддержки</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="sections">
+		<div id="section_1" class="section">
+			<img src="images/section_1.png" alt="" />
+			<h2>Основы и примеры использования Yii</h2>
+			<div class="clear"></div>
+			<div class="lessons">
+				<div class="lesson">
+					<span>Урок 1.</span>
+					<a rel="external" href="lessons/Lesson_1_1/index.html">Введение в Yii</a>
+				</div>
+				<div class="lesson">
+					<span>Урок 2.</span>
+					<a rel="external" href="lessons/Lesson_1_2/index.html">Установка Yii</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Установите Yii</li>
+							<li>Если потребуется, то обновите PHP</li>
+							<li>Добейтесь открытия сайта на Yii</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 3.</span>
+					<a rel="external" href="lessons/Lesson_1_3/index.html">Hello World</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Создайте новое действие</li>
+							<li>Создайте представление, в котором будет произвольный статический текст (в духе страницы «Об авторе»)</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 4.</span>
+					<a rel="external" href="lessons/Lesson_1_4/index.html">Создание форм</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Создайте форму регистрации (логин, пароль, e-mail)</li>
+							<li>Укажите верные правила проверки данных</li>
+							<li>Сделайте правильный вывод сообщений о некорректности заполнения формы</li>
+							<li>Поставьте фильтр trim на все поля формы</li>
+							<li>Получите и выведите все данные (вместо пароля выведите его md5-хэш)</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 5.</span>
+					<a rel="external" href="lessons/Lesson_1_5/index.html">Загрузка файлов в форме</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Добавьте в форму с регистрацией поле с загрузкой фотографии</li>
+							<li>Обработайте загрузку</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 6.</span>
+					<a rel="external" href="lessons/Lesson_1_6/index.html">Работа с базой данных</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Создайте таблицу с пользователями (id, имя пользователя, путь к картинке с его фотографией)</li>
+							<li>Добавьте в неё 5-7 записей</li>
+							<li>Выведите на отдельной странице (действите «users») сайта список пользователей из базы данных (в списке должны присутствовать id, имена пользователей и их фотографии)</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 7.</span>
+					<a rel="external" href="lessons/Lesson_1_7/index.html">Создание навигации по страницам</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Создайте Pagination для страницы с пользователями, чтобы на одной странице выводились только 2 человека</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 8.</span>
+					<a rel="external" href="lessons/Lesson_1_8/index.html">Работа с URL</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Создайте и выведите несколько произвольных URL на отдельную страницу (в теге <a>)</li>
+							<li>Исключите index.php из адресной строки</li>
+							<li>Добейтесь замены ссылки вида http://mysite.local/web/?r=site/users на http://mysite.local/web/users</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 9.</span>
+					<a rel="external" href="lessons/Lesson_1_9/index.html">Обработка запросов</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Добавьте в адресную строку GET-параметр с id пользователя. Должно получиться что-то наподобие этого: http://mysite.local/web/user?id=5</li>
+							<li>Выведите на этой странице того пользователя, чей id был указан. Если id выбран несуществующий, то выведите «Указанного пользователя не существует»</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 10.</span>
+					<a rel="external" href="lessons/Lesson_1_10/index.html">Работа с сессиями</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Добавьте 2 ссылки на главную страницу сайта с выбором размера шрифта (2 ссылки: «крупный», «нормальный»)</li>
+							<li>Запишите выбор пользователя в сессию после перехода по ссылке</li>
+							<li>При заходе на страницу с таблицей с пользователями сделайте текст в ней согласно выбранному ранее размеру</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 11.</span>
+					<a rel="external" href="lessons/Lesson_1_11/index.html">Работа с cookie</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Переделайте предыдущее задание, но используя уже cookie</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 12.</span>
+					<a rel="external" href="lessons/Lesson_1_12/index.html">Создание виджетов</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Создайте виджет, выводящий простое меню в виде:<br />&lt;ul&gt;<br />&nbsp; &lt;li&gt;<br />&nbsp;&nbsp;&nbsp; &lt;a href=«Ссылка 1»&gt;Пункт 1&lt;/a&gt;<br />&nbsp; &lt;/li&gt;<br />&nbsp; &lt;li&gt;<br />&nbsp;&nbsp;&nbsp; &lt;a href=«Ссылка 2»&gt;Пункт 2&lt;/a&gt;<br />&nbsp; &lt;/li&gt;<br />&lt;/ul&gt;</li>
+							<li>Выведите его на странице с пользователями с несколькими пунктами.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="section_2" class="section">
+			<img src="images/section_2.png" alt="" />
+			<h2>Создание Blog.MyRusakov.ru</h2>
+			<div class="clear"></div>
+			<div class="lessons">
+				<div class="lesson">
+					<span>Урок 1.</span>
+					<a rel="external" href="lessons/Lesson_2_1/index.html">Создание базы данных</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<p>Создаваться будет сайт storedvd.ru</p>
+						<ol>
+							<li>Создайте базу данных для сайта и наполните её контентом</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 2.</span>
+					<a rel="external" href="lessons/Lesson_2_2/index.html">Установка и настройка Yii</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Установите и настройте Yii</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 3.</span>
+					<a rel="external" href="lessons/Lesson_2_3/index.html">Создание моделей</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Создайте модели для всех таблиц базы данных</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 4.</span>
+					<a rel="external" href="lessons/Lesson_2_4/index.html">Подключение JS и CSS</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Подключите все CSS и JS файлы</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 5.</span>
+					<a rel="external" href="lessons/Lesson_2_5/index.html">Вывод главной страницы (Основная часть)</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Выведите главную страницу сайта (за исключением сортировки)</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 6.</span>
+					<a rel="external" href="lessons/Lesson_2_6/index.html">Вывод главной страницы (Правые блоки)</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Реализуйте сортировку на главной странице сайта</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 7.</span>
+					<a rel="external" href="lessons/Lesson_2_7/index.html">Вывод страницы "Об авторе"</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Выведите страницу «Оплата и доставка»</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 8.</span>
+					<a rel="external" href="lessons/Lesson_2_8/index.html">Вывод страницы "Видеокурсы"</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Выведите страницу «Контакты» (вместе с Яндекс-картами)</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 9.</span>
+					<a rel="external" href="lessons/Lesson_2_9/index.html">Вывод страницы "Видеоотзывы"</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Выведите страницы с разделами</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 10.</span>
+					<a rel="external" href="lessons/Lesson_2_10/index.html">Вывод страницы "Сайты учеников"</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Реализуйте добавление товаров в корзину</li>
+							<li>Выведите страницу с корзиной</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 11.</span>
+					<a rel="external" href="lessons/Lesson_2_11/index.html">Вывод страницы с постом</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Выведите страницу с формой заказа</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 12.</span>
+					<a rel="external" href="lessons/Lesson_2_12/index.html">Вывод страницы с выпусками рассылки</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Обработайте заказ, добавив информацию в базу данных</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 13.</span>
+					<a rel="external" href="lessons/Lesson_2_13/index.html">Поиск по сайту</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Реализуйте поиск по товарам</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 14.</span>
+					<a rel="external" href="lessons/Lesson_2_14/index.html">Создание ЧПУ-ссылок</a>
+					<img src="images/down.png" alt="Открыть" class="ex_arrow" />
+					<div class="ex">
+						<ol>
+							<li>Сделайте ссылки, аналогичные тем, что на сайте storedvd.ru</li>
+						</ol>
+					</div>
+				</div>
+				<div class="lesson">
+					<span>Урок 15.</span>
+					<a rel="external" href="lessons/Lesson_2_15/index.html">Заключение</a>
+				</div>
+			</div>
+		</div>
+		<div id="section_3" class="section">
+			<img src="images/section_3.png" alt="" />
+			<h2><a rel="external" href="lessons/Bonus/index.html">Бонус</a></h2>
+			<div class="clear"></div>
+		</div>
+		<div id="section_4" class="section">
+			<img src="images/section_4.png" alt="" />
+			<h2>Файлы</h2>
+			<div class="clear"></div>
+			<div class="lessons">
+				<div class="lesson">
+					<span>1.</span>
+					<a href="files/site.rar">Исходники Blog.MyRusakov.ru</a>
+				</div>
+				<div class="lesson">
+					<span>2.</span>
+					<a rel="external" href="https://github.com/yiisoft/yii2/tree/master/docs/guide-ru">Русская документация</a>
+				</div>
+				<div class="lesson">
+					<span>3.</span>
+					<a rel="external" href="http://www.yiiframework.com">Официальный сайт</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="courses">
+		<h2>Этот курс идеально дополняют следующие товары:</h2>
+		<div class="course" id="blue">
+			<h2>1. Видеокурс «Заработок на создании сайтов под заказ»</h2>
+			<img src="images/fl-cover.png" alt="Заработок на создании сайтов под заказ" />
+			<div>
+				<p>Видеокурс "Заработок на создании сайтов под заказ" - это то, что может полностью изменить Вашу жизнь в лучшую сторону. В этом курсе Вы узнаете все мои секреты успешного заработка на создании сайтов под заказ.</p>
+				<p>Из курса Вы узнаете, какие грубейшие ошибки допускают новички, из-за чего 99% терпят неудачу. Узнаете, как правильно заполнить профиль, как правильно писать заказчику, как собирать отзывы.</p>
+				<p>Также Вы получите подробнейший план действий, который начинается с абсолютного нуля и заканчивается полной автоматизацией всех процессов. То есть Вы вообще не будете работать, а работать уже будут на Вас.</p>
+				<p>И, наконец, к курсу идёт бесплатный Бонус, который расскажет Вам 3 способа, как раскрутить аккаунт на фрилансе буквально за 1 день.</p>
+				<table>
+					<tr>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/order?product_ids=10">Заказать!</a>
+						</td>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/fl">Подробнее...</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="course" id="orange">
+			<h2>2. Видеокурс «WordPress 4. Пример создания блога»</h2>
+			<img src="images/wp-cover.png" alt="WordPress 4. Пример создания блога" />
+			<div>
+				<p>Видеокурс "<b>WordPress 4. Пример создания блога</b>" научит Вас создавать любые сайты на самой популярной <b>CMS - WordPress</b>.</p>
+				<p>В курсе Вы узнаете абсолютно всё, что необходимо для успешного создания любых сайтов на WordPress, а также увидите <b>пример создания реального блога</b>.</p>
+				<p>После создания блога он <b>размещается в Интернете</b>, опять же на Ваших глазах. Таким образом, приобретя данный курс, Вы, не обладая никакими знаниями по созданию сайтов, уже сможете их делать, а также выкладывать в Интернет.</p>
+				<p>Курс <b>очень простой и проходится за один вечер</b>, а знания останутся с Вами навсегда.</p>	
+				<table>
+					<tr>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/order?product_ids=9">Заказать!</a>
+						</td>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/wp">Подробнее...</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="course" id="green">
+			<h2>3. Видеокурс «Создание движка на PHP и MySQL 2.0»</h2>
+			<img src="images/php2-cover.png" alt="Создание движка на PHP и MySQL 2.0" />
+			<div>
+				<p>Видеокурс "<b>Создание движка на PHP и MySQL 2.0</b>" научит Вас создавать профессиональные движки для сайтов на <b>PHP и MySQL с использованием ООП и паттерна MVC</b>.</p>
+				<p>В курсе разобрана вся теория по структуре движка: как всё устроено, какие должны быть объекты, какая у них иерархия и как они взаимодействуют между собой.</p>
+				<p>В практической части будет <b>создан движок с чистого листа</b>. Будет создано ядро, все адаптеры, все вспомогательные классы, а также классы для работы с объектами базы данных. И чтобы курс был максимально полезным, будет создан движок для сайта MyRusakov.ru.</p>
+				<p>Аналогично Вы сможете создать движок для абсолютно любого сайта.</p>	
+				<table>
+					<tr>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/order?product_ids=8">Заказать!</a>
+						</td>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/php2">Подробнее...</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="course" id="blue">
+			<h2>4. Видеокурс «HTML5 и CSS3 с Нуля до Гуру»</h2>
+			<img src="images/html5-cover.png" alt="HTML5 и CSS3 с Нуля до Гуру" />
+			<div>
+				<p>Видеокурс "<b>HTML5 и CSS3 с Нуля до Гуру</b>" научит Вас создавать сайты с использованием <b>HTML5 и CSS3</b>. Из курса Вы узнаете, что нового появилось в этих <b>Web-технологиях</b> с разбором множества примеров.</p>
+				<p>И, самое главное, целый раздел посвящён вёрстке главной страницы MyRusakov.ru именно с помощью <b>HTML5 и CSS3</b>. Таким образом, Вы увидите, как верстается реальная страница.</p>
+				<p>И, наконец, Вы узнаете, как адаптировать сайт под мобильные устройства: смартфоны, планшеты и просто мобильные телефоны. Всё это так же на примере главной страницы <b>MyRusakov.ru</b>.</p>
+				<table>
+					<tr>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/order?product_ids=7">Заказать!</a>
+						</td>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/html5">Подробнее...</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="course" id="red">
+			<h2>5. Видеокурс «JavaScript, jQuery и Ajax с Нуля до Гуру»</h2>
+			<img src="images/javascript-cover.png" alt="JavaScript, jQuery и Ajax с Нуля до Гуру" />
+			<div>
+				<p>Видеокурс "<b>JavaScript, jQuery и Ajax с Нуля до Гуру</b>" научит Вас "вдыхать жизнь" в страницы, делая их с потрясающими эффектами и максимальным удобством для пользователя.</p>
+				<p>Курс <b>научит Вас писать скрипты на JavaScript</b>, а также обучит использованию библиотеки <b>jQuery</b> и технологии <b>Ajax</b>.</p>
+				<p>Практически любой красивый сайт (с красивыми галереями изображений, слайдерами, плавными переходами и так далее) использует <b>jQuery</b>. А практически на любом серьёзном сайте вовсю используется технология <b>Ajax</b>, которая делает работу с сайтом максимальной удобной.</p>
+				<p>Поэтому курс "<b>JavaScript, jQuery и Ajax с Нуля до Гуру</b>" Вам просто необходим, если Вы хотите <b>создавать по-настоящему достойные сайты</b>.</p>
+				<table>
+					<tr>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/order?product_ids=5">Заказать!</a>
+						</td>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/javascript">Подробнее...</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="course" id="red">
+			<h2>6. Видеокурс «Создание Интернет-магазина на PHP и MySQL»</h2>
+			<img src="images/im-cover.png" alt="Создание Интернет-магазина на PHP и MySQL" />
+			<div>
+				<p>Видеокурс "<b>Создание Интернет-магазина на PHP и MySQL</b>" – это уникальный курс по созданию Интернет-магазина с нуля. Особенностью данного курса является то, что создание идёт с самого начала, то есть от идеи. Далее создаётся <b>дизайн</b> всех необходимых страниц, после делается их <b>вёрстка</b>. Затем создаётся <b>движок на PHP и MySQL</b>, после делается <b>Admin-панель</b> и, наконец, готовый сайт размещается в Интернете.</p>
+				<p>Адрес созданного в этом курсе сайта: <a rel="external" href="http://storedvd.ru">http://storedvd.ru</a></p>
+				<p>Всё создание сайта будет происходить на Ваших глазах, поэтому Вы легко сможете повторить весь процесс создания сложного функционального сайта уже при разработке своего портала.</p>
+				<table>
+					<tr>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/order?product_ids=4">Заказать!</a>
+						</td>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/im">Подробнее...</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="course" id="blue">
+			<h2>7. Видеокурс «PHP и MySQL с Нуля до Гуру»</h2>
+			<img src="images/php-cover.png" alt="PHP и MySQL с Нуля до Гуру" />
+			<div>
+				<p>Видеокурс "<b>PHP и MySQL с Нуля до Гуру</b>" – это <b>более 20-ти часов</b> видеоуроков по изучению PHP и MySQL с точки зрения создания сайтов.</p>
+				<p>Ключевой момент курса – это <b>создание движка для сайта</b> с нуля. Никакого готового кода, никаких готовых скриптов, а только всё с нуля и прямо на Ваших глазах. Каждая строчка комментируется. Но, главное, <b>я рассказываю о своём подходе при создании движков</b>. Этот подход универсален и оптимален для сайтов любой функциональности: будь то социальная сеть или будь то поисковая система. <b>Данный подход является лишь моими многолетними наработками</b>, и именно с его помощью я создаю абсолютно все свои сайты. <b>Я нигде и никогда не публиковал его, и он достанется только Вам уже готовеньким и отполированным</b>.</p>
+				<p>Поскольку программирование – это прежде всего практика, то я практически для каждого урока сделал упражнения. Причём данные <b>упражнения направлены не только на закрепление материала, но и на реализацию реальных задач, встающих перед Web-разработчиками</b> при создании сайтов.</p>
+				<p>Исходя из вышесказанного, просмотрев курс и выполнив упражнения, <b>Вы сможете без проблем создавать функциональные движки для самых различных сайтов</b>.</p>
+				<table>
+					<tr>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/order?product_ids=3">Заказать!</a>
+						</td>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/php">Подробнее...</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="course" id="gold">
+			<h2>8. Видеокурс «Вёрстка сайта с нуля»</h2>
+			<img src="images/makeup-cover.png" alt="Вёрстка сайта с нуля" />
+			<div>
+				<p>Видеокурс "<b>Вёрстка сайта с нуля</b>" - это уникальная информация по созданию страниц любой сложности.</p>
+				<p>Пройдя данный курс, Вы сможете не только верстать страницы с любым по сложности дизайном, но и выводить на чистую воду недобросовестных верстальщиков, которых в Рунете около <b>95% (!!!)</b>. Поэтому данную информацию <b>надо знать всем: кто создаёт сам и кто заказывает их на стороне</b>.</p>
+				<p>Также вёрстка страниц - это очень прибыльное дело. Заработок верстальщиков составляет <b>от 100 рублей в час у новичков до 1500 рублей в час уже у профи</b>, которым Вы станете после просмотра курса и практики.</p>
+				<p>Также в Видеокурсе "<b>Вёрстка сайта с нуля</b>" рассказывается о том, <b>как искать заказчиков, где их искать, как им писать в первый раз</b>. Всё это я подробно рассказываю в курсе, а также <b>даю уже готовый вариант первого обращения к заказчику</b>. С таким обращением <b>вероятность того, что заказчик к Вам обратится, близка к 100%</b>. А учитывая, что Вы будете профессионалом, то этот заказчик превратится в постоянного!</p>
+				<p>Весь курс соткан из <b>практических примеров реальной вёрстки</b>. А также почти к каждому уроку <b>идут упражнения для закрепления материала</b>, поэтому в отличном результате можете быть уверены!</p>
+				<table>
+					<tr>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/order?product_ids=2">Заказать!</a>
+						</td>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/makeup">Подробнее...</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="course" id="green">
+			<h2>9. Видеокурс «Создание и Раскрутка сайта от А до Я»</h2>
+			<img src="images/kurs-cover.png" alt="Создание и Раскрутка сайта от А до Я" />
+			<div>
+				<p>Видеокурс "<b>Создание и Раскрутка сайта от А до Я</b>" – это 246 видеоуроков общей продолжительностью более 50-ти часов по теме создания, размещения в Интернете и раскрутке сайта.</p>
+				<p>В уроке рассмотрены следующие необходимые любому <b>профессиональному Web-мастеру</b> языки: <b>HTML, CSS, JavaScript, PHP, SQL</b> (с использованием <b>MySQL</b>) и <b>XML</b>.</p>
+				<p>Помимо этого в Видеокурсе рассматривается самая популярная система управления контентом – <b>Joomla</b>.</p>
+				<p>Также в Видеокурсе "<b>Создание и Раскрутка сайта от А до Я</b>" показывается весь процесс создания реального сайта – <b>MyRusakov.ru</b>. Затем демонстрируется его размещение в Интернете, а также последующая раскрутка. Всё это записывается, и Вам остаётся лишь просто повторить, чтобы стать владельцем своего собственного сайта!</p>
+				<p>И, наконец, почти к каждому уроку идут упражнения, которые позволяют закрепить полученные знания из урока уже на практике.</p>
+				<table>
+					<tr>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/order?product_ids=1">Заказать!</a>
+						</td>
+						<td>
+							<a rel="external" href="http://srs.myrusakov.ru/kurs">Подробнее...</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<footer>
+			<img id="top" src="images/top.png" alt="Наверх" />
+			<p>&copy; Русаков Михаил Юрьевич, 2015 г. Все права защищены.</p>
+		</footer>
+	</div>
+</body>
+</html>
